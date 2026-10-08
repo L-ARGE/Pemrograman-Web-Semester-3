@@ -1,20 +1,23 @@
 {% extends 'layout.html' %}
-
-{% block head %}
-<title>Halaman Home bootstrap</title>
-{% endblock %}
+{% block title %}Halaman Home Bootstrap{% endblock %}
 
 {% block body %}
-<div class="container">
-    <nav class="navbar navbar navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand">Navbar</a>
-            <from class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
-                <button class="btn btn-success" type="submit">Search</button>
-            </from>
-        </div>
-    </nav>
-    <h1>Namaku Mikhael dan aku suka uang</h1>
+<div class="sticky-top bg-white py-2" style="z-index: 1020; top:0px; margin-top: -35px;">
+    <div class="d-flex justify-content-end">
+        <form class="d-flex shadow-sm p-2 bg-white rounded border" style="width: 33%; margin-right: -25px;">
+            <input class="form-control me-2" type="search" placeholder="Looking for something?" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<div class="card shadow-sm border-0 bg-light text-center py-5">
+    <div class="card-body">
+        <h1 class="display-5 fw-bold text-primary mb-3">Halo, My Name is Mikhael</h1>
+        <p class="lead text-muted">
+            Welcome! Got somethin' that might interest ya!
+        </p>
+        <hr class="my-4 w-25 mx-auto">
+        <a href="/kontak" class="btn btn-primary btn-lg mt-3">Contact Me</a>
+    </div>
 </div>
 {% endblock %}
