@@ -1,0 +1,27 @@
+URUTAN SEBELUM MEMULAI MEMBUAT PROGRAM
+
+python --version
+
+pip --version
+python -m pip install --upgrade pip #jika ingin melakukan update
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+#digunakan jika venv bermasalah
+
+
+instal library:
+pip install flask-sqlalchemy psycopg2-binary
+
+Note lain:
+py -m pip install Flask
+py -m pip install psycopg2-binary
+py -m pip install python-dotenv
+
+
+langkah menggunakan requirements.txt:
+membuka folder projek
+menginstal venv
+pip install -r requirements.txt
