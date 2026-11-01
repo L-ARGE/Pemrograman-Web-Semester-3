@@ -108,7 +108,7 @@ def update_barang(id):
       raise ValueError
   except (ValueError, TypeError, OverflowError):
     return jsonify({"error": "Harga dan stok tidak valid"}), 400
- 
+
   conn = get_db()
   cursor = None
   try:

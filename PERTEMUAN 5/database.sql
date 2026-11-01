@@ -1,0 +1,7 @@
+CREATE TABLE barang (
+	id SERIAL PRIMARY KEY,
+	nama VARCHAR(100) NOT NULL,
+	harga NUMERIC(12, 2) NOT NULL CHECK (harga >= 0),
+	stok INTEGER NOT NULL CHECK (STOK >= 0)
+	
+);
